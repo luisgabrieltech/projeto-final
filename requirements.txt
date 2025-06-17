@@ -1,0 +1,8 @@
+pandas
+requests
+boto3
+dash
+plotly
+scikit-learn
+xgboost
+pyspark
