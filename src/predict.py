@@ -28,17 +28,3 @@ def prever_acidente(entrada: dict):
     y_pred = model.predict(X)
     classe = target_encoder.inverse_transform(y_pred)[0]
     return classe
-
-# Exemplo de uso
-if __name__ == "__main__":
-    exemplo = {
-        "hora": 18,
-        "uf": "PE",
-        "br": 232,
-        "condicao_metereologica": "Céu Claro",
-        "causa_acidente": "Demais falhas mecânicas ou elétricas",
-        "data": "2025-06-01"
-    }       
-
-    resultado = prever_acidente(exemplo)
-    print(f"Tipo de acidente previsto: {resultado}")
